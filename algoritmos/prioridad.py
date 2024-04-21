@@ -19,6 +19,7 @@ class Prioridad(Algoritmo):
 
             temp.append(proceso)
             temp.sort(key=lambda x: x.llegada)
+            ultima_prioridad = proceso.prioridad
 
         final += temp
         self.procesos = final
